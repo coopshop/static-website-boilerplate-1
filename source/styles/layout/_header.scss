@@ -1,0 +1,22 @@
+#PageHeader {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $base-header-height-sm;
+    z-index: 5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 3px 5px rgba(#000, 0.03);
+
+    @include media-breakpoint-up(md) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: $base-header-height-lg;
+    }
+
+    .menu li a {
+        padding: 10px 15px;
+    }
+}

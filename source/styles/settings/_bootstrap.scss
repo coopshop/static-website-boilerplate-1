@@ -1,0 +1,46 @@
+$grid-columns:          24;
+$grid-gutter-width:     30px;
+
+$font-family-base:      $base-font-family;
+$font-weight-base:      $base-font-weight;
+$line-height-base:      $base-line-height;
+
+// $link-color:                              theme-color("primary");
+$link-decoration:                         none;
+// $link-hover-color:                        darken($link-color, 15%);
+$link-hover-decoration:                   none;
+
+$headings-font-family:        $base-font-family-secondary;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+
+// $display1-size:         rem(96px);
+// $display2-size:         rem(88px);
+// $display3-size:         rem(72px);
+// $display4-size:         rem(54px);
+
+// $h1-font-size:          rem(40px);
+// $h2-font-size:          rem(32px);
+// $h3-font-size:          rem(28px);
+// $h4-font-size:          rem(24px);
+// $h5-font-size:          rem(20px);
+// $h6-font-size:          rem(18px);
+
+$grays:         ();
+$colors:        ();
+$theme-colors:  ();
+$spacers:       ();
+$sizes:         ();
+
+$enable-caret:                                false;
+$enable-rounded:                              false;
+$enable-shadows:                              false;
+$enable-gradients:                            false;
+$enable-transitions:                          true;
+$enable-prefers-reduced-motion-media-query:   true;
+$enable-grid-classes:                         true;
+$enable-pointer-cursor-for-buttons:           true;
+$enable-print-styles:                         true;
+$enable-responsive-font-sizes:                true;
+$enable-validation-icons:                     false;
+$enable-deprecation-messages:                 false;
