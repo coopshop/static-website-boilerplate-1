@@ -9,15 +9,35 @@
         <script src="./assets/scripts/main.js"></script>
     </head>
     <body>
+	
+		<input type="checkbox" id="MobileOverlayTrigger" class="mobile-overlay-trigger sr-only">
 
         <header id="PageHeader">
-            <nav class="container">
-                <ul class="menu">
-                    <li><a href="#section-1">Section 1</a></li>
-                    <li><a href="#section-2">Section 2</a></li>
-                    <li><a href="#section-3">Section 3</a></li>
-                </ul>
-            </nav>
+			<div class="container">
+
+				<a href="./" title="ACME">
+					<img src="./assets/images/logo.svg" alt="ACME">
+				</a>
+				
+				<div id="MobileOverlay" class="d-none d-md-block">
+					<div id="MobileOverlayInside">
+					
+						<ul id="HeaderMenu" class="menu">
+							<li><a href="#section-1">Section 1</a></li>
+							<li><a href="#section-2">Section 2</a></li>
+							<li><a href="#section-3">Section 3</a></li>
+						</ul>
+						
+					</div>
+				</div>
+				
+				<label for="MobileOverlayTrigger" class="d-md-none hamburger hamburger--emphatic" aria-label="HeaderMenu" aria-controls="HeaderMenu">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</label>
+
+			</div>
         </header>
 
         <main id="PageWrapper">

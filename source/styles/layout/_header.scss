@@ -15,8 +15,16 @@
         padding-bottom: 15px;
         height: $base-header-height-lg;
     }
+	
+	.container {	
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
 
     .menu li a {
-        padding: 10px 15px;
+        padding: 8px 14px;
+		color: $gray-800;
     }
 }

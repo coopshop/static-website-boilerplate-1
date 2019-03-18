@@ -7579,12 +7579,12 @@ h6:not(*:root),
 }
 
 #PageWrapper {
-  padding-top: 54px;
+  padding-top: 60px;
 }
 
 @media (min-width: 768px) {
   #PageWrapper {
-    padding-top: 74px;
+    padding-top: 70px;
   }
 }
 
@@ -7607,7 +7607,7 @@ h6:not(*:root),
   top: 0;
   left: 0;
   right: 0;
-  height: 54px;
+  height: 60px;
   z-index: 5;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -7618,12 +7618,20 @@ h6:not(*:root),
   #PageHeader {
     padding-top: 15px;
     padding-bottom: 15px;
-    height: 74px;
+    height: 70px;
   }
 }
 
+#PageHeader .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 #PageHeader .menu li a {
-  padding: 10px 15px;
+  padding: 8px 14px;
+  color: #343a40;
 }
 
 .section-item {
@@ -7641,7 +7649,7 @@ h6:not(*:root),
   height: 0;
   left: 0;
   right: 0;
-  top: -54px;
+  top: -60px;
 }
 
 .section-item .section-headline:last-child,
@@ -7663,7 +7671,7 @@ h6:not(*:root),
   }
 
   .section-item .section-anchor {
-    top: -74px;
+    top: -70px;
   }
 }
 
@@ -7686,6 +7694,12 @@ h6:not(*:root),
   color: #adb5bd;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 14px;
+}
+
+#PageFooter .menu li a {
+  padding: 4px 8px;
+  color: #adb5bd;
 }
 
 @media (min-width: 768px) {
