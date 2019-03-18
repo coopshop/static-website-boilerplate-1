@@ -57,3 +57,6 @@ rm -rf node_modules package-lock.json
 npm cache clear --force
 npm install
 ```
+
+### TODOs
+* Include https://clrs.cc (look also in the footer for more tools)

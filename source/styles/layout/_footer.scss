@@ -1,14 +1,21 @@
 #PageFooter {
     background: $gray-900;
-    color: $gray-500;
     padding-top: 20px;
     padding-bottom: 20px;
-	font-size: 14px;
+	
+	&, .menu a {
+		color: $gray-600;
+		font-size: rem(14px);
+		font-weight: 400;
+	}
 
-    .menu li a {
+    .menu a {
         padding: 4px 8px;
-		color: $gray-500;
     }
+	
+	.menu a:hover {
+		color: #fff;
+	}
 
     // >=768px
     @include media-breakpoint-up(md) {
