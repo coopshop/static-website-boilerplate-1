@@ -1,0 +1,13 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    hyphens: auto;
+
+	// Only for webkit browser: http://browserhacks.com
+    &:not(*:root) {
+        word-break: break-all;
+    }
+}

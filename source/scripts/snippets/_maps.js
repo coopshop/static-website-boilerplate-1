@@ -17,7 +17,7 @@ L.Icon.Default.mergeOptions({
 
 var mapBoxToken = 'pk.eyJ1IjoiMTNncmFkIiwiYSI6ImNqdDVmM2d5ajA1Y2wzenJ1YjJ0cjJ2MDQifQ.pHhKf75zy1cfXxoRh8fY3Q',
     mapBoxStyle = '13grad/cjpxwcndg0lke2sqigckii6do',
-    mapBoxUrl   = 'https://api.mapbox.com/styles/v1/{mapBoxStyle}/tiles/256/{z}/{x}/{y}?access_token={accessToken}';
+    mapBoxUrl   = 'https://api.mapbox.com/styles/v1/{mapBoxStyle}/tiles/256/{z}/{x}/{y}{r}?access_token={accessToken}';
 
 document.querySelectorAll('.bulding-map').forEach(function(mapElement){
 

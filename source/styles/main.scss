@@ -13,8 +13,9 @@
 @import "vendor/leaflet";
 
 // Layout
-@import "layout/base";
 @import "layout/fonts";
+@import "layout/typo";
+@import "layout/base";
 @import "layout/menus";
 @import "layout/header";
 @import "layout/sections";
