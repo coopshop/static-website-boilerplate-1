@@ -1,12 +1,15 @@
 .section-item {
-    // <576px
     position: relative;
-    padding-top: rem(20px);
-    padding-bottom: rem(20px);
 
     // &:not(:last-child) {
     //     border-bottom: 1px solid $gray-300;
     // }
+}
+
+.section-inside {
+    // <576px
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
 
     // >=576px
     @include media-breakpoint-up(sm) {
@@ -65,10 +68,13 @@
 */
 .section-hero {
 	background-attachment: fixed;
-	min-height: rem(250px);
-	height: calc(100vh - #{$base-header-height-sm});
-	display: flex;
-	align-items: flex-end;
+
+    .section-inside {
+        min-height: rem(250px);
+        height: calc(100vh - #{$base-header-height-sm});
+        display: flex;
+        align-items: flex-end;
+    }
 
 	&:before, &::after {
 		content: ' ';
@@ -91,20 +97,28 @@
 	}
 
     @include media-breakpoint-up(sm) {
-		min-height: rem(300px);
+        .section-inside {
+            min-height: rem(300px);
+        }
     }
 
     @include media-breakpoint-up(md) {
-		min-height: rem(350px);
-		height: calc(100vh - #{$base-header-height-lg});
+        .section-inside {
+		    min-height: rem(350px);
+            height: calc(100vh - #{$base-header-height-lg});
+        }
     }
 
     @include media-breakpoint-up(lg) {
-		min-height: rem(400px);
+        .section-inside {
+            min-height: rem(400px);
+        }
     }
 
     @include media-breakpoint-up(xl) {
-		min-height: rem(450px);
+        .section-inside {
+            min-height: rem(450px);
+        }
     }
 }
 
@@ -130,4 +144,14 @@
 .section-layout-danger {
     background-color: theme-color('danger');
     color: theme-color('light');
+}
+
+.section-layout-dark {
+    background-color: theme-color('dark');
+    color: theme-color('light');
+}
+
+.section-layout-light {
+    background-color: theme-color('light');
+    color: theme-color('dark');
 }

@@ -664,6 +664,14 @@
   content: attr(data-gesture-handling-scroll-content); }
 @charset "UTF-8";
 
+/*
+** Header
+*/
+
+/*
+** Footer
+*/
+
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -3135,6 +3143,37 @@ mark,
 
   .offset-xl-23 {
     margin-left: 95.8333333333%;
+  }
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none;
+  }
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
   }
 }
 
@@ -7099,7 +7138,7 @@ a.text-dark:focus {
  */
 
 .hamburger {
-  padding: 13px 10px;
+  padding: 0.4444444444rem 0.5555555556rem;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, -webkit-filter;
@@ -7177,51 +7216,47 @@ a.text-dark:focus {
 }
 
 /*
- * Collapse
+ * Squeeze
  */
 
-.hamburger--collapse .hamburger-inner {
-  top: auto;
-  bottom: 0;
-  transition-duration: 0.13s;
-  transition-delay: 0.13s;
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.hamburger--collapse .hamburger-inner::after {
-  top: -14px;
-  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+.hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
 }
 
-.hamburger--collapse .hamburger-inner::before {
-  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+.hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.hamburger--collapse.is-active .hamburger-inner,
-#MobileOverlayTrigger:checked ~ #PageHeader .hamburger--collapse.hamburger .hamburger-inner {
-  -webkit-transform: translate3d(0, -7px, 0) rotate(-45deg);
-          transform: translate3d(0, -7px, 0) rotate(-45deg);
-  transition-delay: 0.22s;
+.hamburger--squeeze.is-active .hamburger-inner,
+#MobileOverlayTrigger:checked ~ #PageHeader .hamburger--squeeze.hamburger .hamburger-inner {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.hamburger--collapse.is-active .hamburger-inner::after,
-#MobileOverlayTrigger:checked ~ #PageHeader .hamburger--collapse.hamburger .hamburger-inner::after {
+.hamburger--squeeze.is-active .hamburger-inner::before,
+#MobileOverlayTrigger:checked ~ #PageHeader .hamburger--squeeze.hamburger .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
 }
 
-.hamburger--collapse.is-active .hamburger-inner::before,
-#MobileOverlayTrigger:checked ~ #PageHeader .hamburger--collapse.hamburger .hamburger-inner::before {
-  top: 0;
+.hamburger--squeeze.is-active .hamburger-inner::after,
+#MobileOverlayTrigger:checked ~ #PageHeader .hamburger--squeeze.hamburger .hamburger-inner::after {
+  bottom: 0;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 /* Slider */
@@ -7537,18 +7572,19 @@ html {
   overflow-x: hidden;
 }
 
-#MobileOverlayTrigger {
-  position: fixed;
-}
-
-#PageWrapper {
-  padding-top: 63px;
+body {
+  position: relative;
+  padding-top: 53px;
 }
 
 @media (min-width: 768px) {
-  #PageWrapper {
-    padding-top: 74px;
+  body {
+    padding-top: 66.5px;
   }
+}
+
+#MobileOverlayTrigger {
+  position: fixed;
 }
 
 a {
@@ -7578,21 +7614,13 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 63px;
+  height: 53px;
   z-index: 5;
   padding-top: 5px;
   padding-bottom: 5px;
   text-transform: uppercase;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.03);
   z-index: 100;
-}
-
-@media (min-width: 768px) {
-  #PageHeader {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    height: 74px;
-  }
 }
 
 #PageHeader .container {
@@ -7602,46 +7630,140 @@ a {
   flex-wrap: wrap;
 }
 
-#PageHeader .menu li a {
-  padding: 10px 14px;
-  font-size: 0.8333333333rem;
-  font-weight: 600;
-  color: #343a40;
+#PageHeader #Logo img {
+  display: block;
+  width: 65px;
+  height: auto;
 }
 
-#MobileOverlayTrigger:checked ~ #PageHeader {
-  background: red;
+#PageHeader .menu li a {
+  position: relative;
+  font-weight: 600;
+  color: #343a40;
+  z-index: 0;
+}
+
+#PageHeader .menu li a:before {
+  background: #343a40;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5;
+  visibility: hidden;
+  transition: 0.15s ease-in-out;
+}
+
+#PageHeader .menu li a.active {
+  color: #f8f9fa;
+}
+
+#PageHeader .menu li a.active:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 767.98px) {
+  #PageHeader #MobileOverlay {
+    background-color: #fff;
+    position: fixed;
+    top: 53px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 150;
+    overflow: auto;
+    transition: 0.15s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  #PageHeader #MobileOverlayInside {
+    transition: 0.15s ease-in-out;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    padding: 1.6666666667rem;
+  }
+
+  #PageHeader .menu {
+    display: block;
+    text-align: center;
+  }
+
+  #PageHeader .menu li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #PageHeader .menu li a {
+    display: inline-block;
+    padding: 4px 9px;
+  }
+}
+
+@media (min-width: 768px) {
+  #PageHeader {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 66.5px;
+  }
+
+  #PageHeader .menu li a {
+    padding: 8px 12px 6px;
+    font-size: 0.8333333333rem;
+  }
+}
+
+#MobileOverlayTrigger:checked ~ #PageHeader #MobileOverlay {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+#MobileOverlayTrigger:checked ~ #PageHeader #MobileOverlayInside {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
 }
 
 .section-item {
   position: relative;
+}
+
+.section-inside {
   padding-top: 1.1111111111rem;
   padding-bottom: 1.1111111111rem;
 }
 
 @media (min-width: 576px) {
-  .section-item {
+  .section-inside {
     padding-top: 2.2222222222rem;
     padding-bottom: 2.2222222222rem;
   }
 }
 
 @media (min-width: 768px) {
-  .section-item {
+  .section-inside {
     padding-top: 3.3333333333rem;
     padding-bottom: 3.3333333333rem;
   }
 }
 
 @media (min-width: 992px) {
-  .section-item {
+  .section-inside {
     padding-top: 4.4444444444rem;
     padding-bottom: 4.4444444444rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .section-item {
+  .section-inside {
     padding-top: 5.5555555556rem;
     padding-bottom: 5.5555555556rem;
   }
@@ -7658,12 +7780,12 @@ a {
   height: 0;
   left: 0;
   right: 0;
-  top: -63px;
+  top: -53px;
 }
 
 @media (min-width: 768px) {
   .section-anchor {
-    top: -74px;
+    top: -66.5px;
   }
 }
 
@@ -7677,8 +7799,11 @@ a {
 
 .section-hero {
   background-attachment: fixed;
+}
+
+.section-hero .section-inside {
   min-height: 13.8888888889rem;
-  height: calc(100vh - 63px);
+  height: calc(100vh - 53px);
   display: flex;
   align-items: flex-end;
 }
@@ -7705,26 +7830,26 @@ a {
 }
 
 @media (min-width: 576px) {
-  .section-hero {
+  .section-hero .section-inside {
     min-height: 16.6666666667rem;
   }
 }
 
 @media (min-width: 768px) {
-  .section-hero {
+  .section-hero .section-inside {
     min-height: 19.4444444444rem;
-    height: calc(100vh - 74px);
+    height: calc(100vh - 66.5px);
   }
 }
 
 @media (min-width: 992px) {
-  .section-hero {
+  .section-hero .section-inside {
     min-height: 22.2222222222rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .section-hero {
+  .section-hero .section-inside {
     min-height: 25rem;
   }
 }
@@ -7753,25 +7878,31 @@ a {
   color: #f8f9fa;
 }
 
+.section-layout-dark {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.section-layout-light {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
 #PageFooter {
-  background: #212529;
+  background: #222;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 #PageFooter,
 #PageFooter .menu a {
-  color: #6c757d;
+  color: #8c8c8c;
   font-size: 0.7777777778rem;
   font-weight: 400;
 }
 
 #PageFooter .menu a {
   padding: 4px 8px;
-}
-
-#PageFooter .menu a:hover {
-  color: #fff;
 }
 
 @media (min-width: 768px) {

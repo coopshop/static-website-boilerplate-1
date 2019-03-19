@@ -1,6 +1,6 @@
-// import 'jquery';
+import 'jquery';
 // import './vendor/_slick-carousel';
-// import './vendor/_bootstrap';
+import './vendor/_bootstrap';
 
 // $(document).ready(function() {
 //     require('./snippets/_menus');

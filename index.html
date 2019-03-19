@@ -8,114 +8,142 @@
         <link rel="stylesheet" href="./assets/styles/main.css">
         <script src="./assets/scripts/main.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#MobileOverlayInside">
 
 		<input type="checkbox" id="MobileOverlayTrigger" class="mobile-overlay-trigger">
 
         <header id="PageHeader">
-			<div class="container">
+			<nav class="container">
 
-				<a href="./" title="ACME">
+				<a id="Logo" href="./" title="ACME">
 					<img src="./assets/images/logo.svg" alt="ACME">
 				</a>
 
-				<div id="MobileOverlay" class="d-none d-md-block">
+				<div id="MobileOverlay">
 					<div id="MobileOverlayInside">
 
-						<ul id="HeaderMenu" class="menu">
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#services">Services</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#contact">Contact</a></li>
+						<ul id="HeaderMenu" class="menu nav">
+							<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 						</ul>
 
 					</div>
 				</div>
 
-				<label for="MobileOverlayTrigger" class="d-md-none hamburger hamburger--3dx" aria-label="HeaderMenu" aria-controls="HeaderMenu">
+				<label for="MobileOverlayTrigger" class="d-md-none hamburger hamburger--squeeze" aria-label="HeaderMenu" aria-controls="HeaderMenu">
 					<span class="hamburger-box">
 						<span class="hamburger-inner"></span>
 					</span>
 				</label>
 
-			</div>
+			</nav>
         </header>
 
         <main id="PageWrapper">
 
             <section class="section-item section-hero section-bg-image" style="background-image:url('./assets/images/hero-image.jpg')">
+                <div class="section-inside">
 
-                <div class="section-body container">
+                    <div class="section-body container">
 
-                    <h1 class="section-headline">Hero (H1)</h1>
-                    <h2 class="section-subline">Section Subline (H2)</h2>
+                        <h1 class="section-headline">Hero (H1)</h1>
+                        <h2 class="section-subline">Section Subline (H2)</h2>
+
+                    </div>
 
                 </div>
-
             </section>
 
-            <section class="section-item section-layout-primary">
+            <section class="section-item section-layout-light">
+                <div class="section-inside">
 
-                <span id="projects" class="section-anchor"></span>
+                    <span id="projects" class="section-anchor"></span>
 
-                <div class="section-body container">
+                    <div class="section-body container">
 
-                    <h2 class="section-headline">Projects (H2)</h2>
-                    <h3 class="section-subline">Section Subline (H3)</h3>
+                        <h2 class="section-headline">Projects (H2)</h2>
+                        <h3 class="section-subline">Section Subline (H3)</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+
+                    </div>
 
                 </div>
-
             </section>
 
-            <section class="section-item section-layout-secondary">
+            <section class="section-item">
+                <div class="section-inside">
 
-                <span id="services" class="section-anchor"></span>
+                    <span id="services" class="section-anchor"></span>
 
-                <div class="section-body container">
+                    <div class="section-body container">
 
-                    <h2 class="section-headline">Services (H2)</h2>
-                    <h3 class="section-subline">Section Subline (H3)</h3>
+                        <h2 class="section-headline">Services (H2)</h2>
+                        <h3 class="section-subline">Section Subline (H3)</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+
+                    </div>
 
                 </div>
-
             </section>
 
-            <section class="section-item section-layout-success">
+            <section class="section-item section-layout-light">
+                <div class="section-inside">
 
-                <span id="about" class="section-anchor"></span>
+                    <span id="about" class="section-anchor"></span>
 
-                <div class="section-body container">
+                    <div class="section-body container">
 
-                    <h2 class="section-headline">About (H2)</h2>
-                    <h3 class="section-subline">Section Subline (H3)</h3>
+                        <h2 class="section-headline">About (H2)</h2>
+                        <h3 class="section-subline">Section Subline (H3)</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+
+                    </div>
 
                 </div>
-
             </section>
 
-            <section class="section-item section-layout-danger">
+            <section class="section-item">
+                <div class="section-inside">
 
-                <span id="contact" class="section-anchor"></span>
+                    <span id="contact" class="section-anchor"></span>
 
-                <div class="section-body container">
+                    <div class="section-body container">
 
-                    <h2 class="section-headline">Contact (H2)</h2>
-                    <h3 class="section-subline">Section Subline (H3)</h3>
+                        <h2 class="section-headline">Contact (H2)</h2>
+                        <h3 class="section-subline">Section Subline (H3)</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+
+                    </div>
 
                 </div>
+            </section>
 
+            <section class="section-item section-layout-dark collapse" id="PrivacyCollapse">
+                <div class="section-inside">
+
+                    <span id="privacy" class="section-anchor"></span>
+
+                    <div class="section-body container">
+
+                        <h2 class="section-headline">Privacy (H2)</h2>
+                        <h3 class="section-subline">Section Subline (H3)</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+
+                    </div>
+
+                </div>
             </section>
 
         </main>
@@ -130,8 +158,8 @@
 
                     <div class="col-24 col-sm-auto">
                         <ul class="menu">
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#PrivacyCollapse" data-toggle="collapse" role="button" aria-expanded="false">Privacy</a></li>
                         </ul>
                     </div>
 
