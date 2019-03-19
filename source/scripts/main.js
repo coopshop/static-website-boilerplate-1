@@ -1,4 +1,5 @@
 import 'jquery';
+import './vendor/_aos';
 // import './vendor/_slick-carousel';
 import './vendor/_bootstrap';
 
