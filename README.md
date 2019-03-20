@@ -13,7 +13,7 @@ Make sure you have installed [Git](https://git-scm.com/) and  [Node.js](https://
 Clone the repository
 
 ```
-git clone git@bitbucket.org:novusidea/website-boilerplate.git [MY-PROJECT]
+git clone --depth 1 https://github.com/novusidea/static-website-boilerplate.git [MY-PROJECT]
 ```
 
 Enter the folder
