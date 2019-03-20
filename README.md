@@ -1,4 +1,4 @@
-# Website Boilerplate ([DEMO](https://novusidea.github.io/static-website-boilerplate/))
+# Website Boilerplate ([Demo](https://novusidea.github.io/static-website-boilerplate/))
 
 This is a basic website template to create static websites with bootstrap and other useful built-in scripts and snippets.
 
