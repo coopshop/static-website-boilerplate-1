@@ -5,7 +5,6 @@ This is a basic website template to create static websites with bootstrap and ot
 ![Screenshot](screenshot.png)
 
 
-
 ## Getting Started
 
 ### Prerequisites
