@@ -1,6 +1,6 @@
 # Website Boilerplate
 
-This is a basically website boilerplate to build static websites with bootstrap an other usable scripts and snippets.
+This is a basic website template to create static websites with bootstrap and other useful built-in scripts and snippets.
 
 ## Getting Started
 
@@ -50,13 +50,15 @@ npm run watch
 
 ### Troubleshooting
 
-Because I use Laravel Mix, we can use look for Troubleshooting at thair project at [Laravel Mix](https://laravel-mix.com/docs/troubleshooting).
+If installing npm dependencies or building assets does not work, try the following:
 
 ```
 rm -rf node_modules package-lock.json
 npm cache clear --force
 npm install
 ```
+
+Further information at: [Laravel Mix](https://laravel-mix.com/docs/troubleshooting)
 
 ### TODOs
 * Add maps section based on [Leaflet](https://leafletjs.com/) and use one of [OpenStreetMap Tile Layers](https://wiki.openstreetmap.org/wiki/Tile_servers)
