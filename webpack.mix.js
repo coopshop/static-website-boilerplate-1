@@ -18,6 +18,13 @@ mix
         proxy: false,
         watch: true,
         notify: false,
+		// files: [
+        //     '**/*.php',
+        //     'assets/fonts/**/*',
+        //     'assets/images/**/*',
+        //     'assets/scripts/**/*.js',
+        //     'assets/styles/**/*.css'
+        // ],
     })
     .autoload({'jquery': ['jQuery', '$']})
     .copyDirectory('source/images',     'assets/images/')
