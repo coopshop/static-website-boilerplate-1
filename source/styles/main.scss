@@ -13,10 +13,12 @@
 @import "vendor/leaflet";
 
 // Layout
+@import "layout/helpers";
 @import "layout/fonts";
 @import "layout/typo";
 @import "layout/base";
 @import "layout/menus";
 @import "layout/header";
 @import "layout/sections";
+@import "layout/sliders";
 @import "layout/footer";

@@ -42,7 +42,6 @@
             bottom: 0;
             width: 0;
             z-index: -1;
-            visibility: hidden;
             transition: 0.15s ease-in-out;
         }
     }
@@ -53,7 +52,6 @@
         &:before {
             width: 100%;
             opacity: 1;
-            visibility: visible;
         }
     }
 

@@ -20,3 +20,7 @@ body {
 a {
 	transition: 0.15s ease-in-out;
 }
+
+*:focus {
+    outline: 0;
+}

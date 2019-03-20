@@ -1,0 +1,32 @@
+// background-position
+.bg-position-top-left {
+    background-position: 0 0 !important;
+}
+.bg-position-top-center {
+    background-position: 50% 0 !important;
+}
+.bg-position-top-right {
+    background-position: 100% 0 !important;
+}
+
+
+.bg-position-center-left {
+    background-position: 0 50% !important;
+}
+.bg-position-center-center {
+    background-position: 50% !important;
+}
+.bg-position-center-right {
+    background-position: 100% 50% !important;
+}
+
+
+.bg-position-bottom-left {
+    background-position: 0 100% !important;
+}
+.bg-position-bottom-center {
+    background-position: 50% 100% !important;
+}
+.bg-position-bottom-right {
+    background-position: 100% 100% !important;
+}

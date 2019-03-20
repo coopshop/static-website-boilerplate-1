@@ -70,13 +70,16 @@
 	background-attachment: fixed;
 
     .section-inside {
+        position: relative;
         min-height: rem(250px);
         height: calc(100vh - #{$base-header-height-sm});
-        display: flex;
+        display: flex !important;
         align-items: flex-end;
+        flex: 1 1 auto;
     }
 
-	&:before, &::after {
+    .section-inside::before,
+    .section-inside::after {
 		content: ' ';
 		position: absolute;
 		top: 0;
@@ -85,16 +88,17 @@
 		bottom: 0;
 	}
 
-	&::before {
+	.section-inside::before {
 		background-color: rgba(#000, 0.5);
 		z-index: 0;
 	}
 
 	.section-body {
+        flex: 1 1 auto;
 		position: relative;
 		z-index: 5;
 		color: #fff;
-	}
+    }
 
     @include media-breakpoint-up(sm) {
         .section-inside {
@@ -122,10 +126,38 @@
     }
 }
 
+
+/*
+**	Section: Hero Slider
+*/
+.section-hero-slider {
+
+    @include media-breakpoint-down(sm) {
+        ~ .section-item {
+            padding-top: rem(30px);
+        }
+    }
+
+    // Fix problems with aos
+    .hero-slider:not(.slick-initialized) {
+        display: flex;
+    }
+
+    .section-inside {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+/*
+** All Sliders
+*/
+
 /*
 ** Section: Layouts
 */
-
 .section-layout-primary {
     background-color: theme-color('primary');
     color: theme-color('light');
