@@ -36,16 +36,16 @@ Build Assets in development mode
 npm run dev
 ```
 
-Build Assets, open in browser and watch file changes
-
-```
-npm rumn watch
-```
-
 Build Assets in production mode
 
 ```
 npm run prod
+```
+
+Build Assets, open in browser and watch file changes
+
+```
+npm run watch
 ```
 
 ### Troubleshooting
