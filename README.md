@@ -2,6 +2,8 @@
 
 This is a basic website template to create static websites with bootstrap and other useful built-in scripts and snippets.
 
+![Screenshot](screenshot.png)
+
 
 
 ## Getting Started
@@ -9,8 +11,6 @@ This is a basic website template to create static websites with bootstrap and ot
 ### Prerequisites
 
 Make sure you have installed [Git](https://git-scm.com/) and  [Node.js](https://nodejs.org) for your operating system.
-
-![Screenshot](screenshot.png)
 
 ### Installing
 
