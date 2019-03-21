@@ -1,0 +1,7 @@
+@mixin linear-gradient($colors: (#fff, #000), $degree: 0deg) {
+    background: linear-gradient(#{$degree}, $colors);
+}
+
+@mixin radial-gradient($colors: (#fff, #000), $type: ellipse at center) {
+    background: radial-gradient(#{$type}, $colors);
+}

@@ -46,7 +46,8 @@
         }
     }
 
-    .menu li a.active {
+    .menu li.current-menu-item a,
+    .menu li.current_page_item a {
         color: theme-color('light');
 
         &:before {
