@@ -66,3 +66,4 @@ Further information at: [Laravel Mix](https://laravel-mix.com/docs/troubleshooti
 ### TODOs
 * Add maps section based on [Leaflet](https://leafletjs.com/) and use one of [OpenStreetMap Tile Layers](https://wiki.openstreetmap.org/wiki/Tile_servers)
 * Add [Colors](https://clrs.cc) (look also in the footer for more tools)
+* Implement anime.js in slick carousel
