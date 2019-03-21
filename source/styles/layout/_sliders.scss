@@ -82,6 +82,10 @@
         transition: 0.15s ease-in-out;
     }
 
+    li button:hover {
+        color: theme-color('dark');
+    }
+
     @include media-breakpoint-down(sm) {
         li.slick-active button {
             background: theme-color('dark');
@@ -95,6 +99,10 @@
             transform: scale(0.3);
             background-color: #fff;
             border-color: #fff;
+        }
+
+        li button:hover {
+
         }
     }
 }
