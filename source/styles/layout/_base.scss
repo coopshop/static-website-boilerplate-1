@@ -5,10 +5,10 @@ html {
 
 body {
     position: relative;
-    padding-top: $base-header-height-sm;
+    padding-top: $header-height-sm;
 
     @include media-breakpoint-up(md) {
-        padding-top: $base-header-height-lg;
+        padding-top: $header-height-lg;
     }
 }
 

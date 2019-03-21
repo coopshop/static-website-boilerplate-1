@@ -47,10 +47,10 @@
 	height: 0;
 	left: 0;
 	right: 0;
-	top: -$base-header-height-sm;
+	top: -$header-height-sm;
 
 	@include media-breakpoint-up(md) {
-		top: -$base-header-height-lg;
+		top: -$header-height-lg;
 	}
 }
 
@@ -72,7 +72,7 @@
     .section-inside {
         position: relative;
         min-height: rem(250px);
-        height: calc(100vh - #{$base-header-height-sm});
+        height: calc(100vh - #{$header-height-sm});
         display: flex !important;
         align-items: flex-end;
         flex: 1 1 auto;
@@ -109,7 +109,7 @@
     @include media-breakpoint-up(md) {
         .section-inside {
 		    min-height: rem(350px);
-            height: calc(100vh - #{$base-header-height-lg});
+            height: calc(100vh - #{$header-height-lg});
         }
     }
 

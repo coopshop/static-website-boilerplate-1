@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: $base-header-height-sm;
+    height: $header-height-sm;
     z-index: 5;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -59,7 +59,7 @@
         #MobileOverlay {
             background-color: #fff;
             position: fixed;
-            top: $base-header-height-sm;
+            top: $header-height-sm;
             left: 0;
             right: 0;
             bottom: 0;
@@ -95,7 +95,7 @@
     @include media-breakpoint-up(md) {
         padding-top: 15px;
         padding-bottom: 15px;
-        height: $base-header-height-lg;
+        height: $header-height-lg;
 
         .menu li a {
             padding: 8px 12px 6px;
