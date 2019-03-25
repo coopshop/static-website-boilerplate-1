@@ -1,6 +1,8 @@
 html {
+	scroll-behavior: smooth;
 	font-size: $base-font-size;
 	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 body {
