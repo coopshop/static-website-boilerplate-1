@@ -28,6 +28,7 @@ mix
     })
     .autoload({'jquery': ['jQuery', '$']})
     .copyDirectory('source/favicons',   'assets/favicons/')
+    .copyDirectory('source/videos',     'assets/videos/')
     .copyDirectory('source/images',     'assets/images/')
     .sass('source/styles/main.scss',    'assets/styles/')
     .js('source/scripts/main.js',       'assets/scripts/')

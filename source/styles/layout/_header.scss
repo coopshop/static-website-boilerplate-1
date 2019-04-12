@@ -1,5 +1,5 @@
 #PageHeader {
-    background: #fff;
+    // background: #fff;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +9,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
 	text-transform: uppercase;
-    box-shadow: 0 3px 5px rgba(#000, 0.06);
+    // box-shadow: 0 3px 5px rgba(#000, 0.06);
 	z-index: 100;
 
 	.container {
@@ -29,8 +29,8 @@
 
     .menu li a {
         position: relative;
-        font-weight: 600;
-        color: $gray-800;
+        font-weight: 400;
+        color: #fff;
         z-index: 0;
 
         &:before {
