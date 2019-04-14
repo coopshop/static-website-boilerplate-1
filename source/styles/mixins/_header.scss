@@ -1,0 +1,14 @@
+@mixin header-sm() {
+    height: $header-height-sm;
+    padding: rem(10px);
+}
+
+@mixin header-md() {
+    height: $header-height-md;
+    padding: rem(20px);
+}
+
+@mixin header-lg() {
+    height: $header-height-lg;
+    padding: rem(30px);
+}

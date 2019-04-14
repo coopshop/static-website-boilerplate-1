@@ -1,0 +1,51 @@
+@include media-breakpoint-down(sm) {
+    // Closed
+    #MobileOverlay {
+        background-color: theme-color('dark');
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 150;
+        max-height: calc(100vh - #{$header-height-sm});
+        overflow: auto;
+        will-change: transform, opacity;
+        transition: all 0.15s ease-in-out,
+                    max-height 0s;
+        transform: translateY(100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #MobileOverlayInside {
+        transition: 0.15s ease-in-out;
+        padding: rem(30px);
+    }
+
+    #HeaderMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        li a {
+            display: block;
+        }
+    }
+
+    // Opened
+    #MobileOverlayTrigger:checked ~ #PageHeader {
+        margin-top: 0;
+        visibility: visible;
+        opacity: 1;
+
+        #MobileOverlay {
+            transform: translateY(0);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+#MobileOverlayTrigger:checked ~ #PageHeader .hamburger {
+    @extend .is-active;
+}

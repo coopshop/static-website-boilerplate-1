@@ -1,4 +1,4 @@
-$('.hero-slider').slick({
+$('.slider').slick({
     arrows: true,
     dots: true,
 });

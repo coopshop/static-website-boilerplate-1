@@ -1,91 +1,16 @@
 .section-hero {
-	background-attachment: fixed;
 
     .section-inside {
-        position: relative;
-        min-height: rem(250px);
-        height: 100vh;
         display: flex !important;
         align-items: flex-end;
         flex: 1 1 auto;
+        height: 100%;
     }
-
-    .section-inside::before,
-    .section-inside::after {
-		content: ' ';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-	}
-
-	.section-inside::before {
-		background-color: rgba(#000, 0.5);
-		z-index: 0;
-	}
 
 	.section-body {
         flex: 1 1 auto;
-		position: relative;
-		z-index: 5;
 		color: #fff;
     }
 
-    .section-video-bg {
-        background-size: cover;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
 
-        video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: auto;
-            height: auto;
-            min-width: 100%;
-            min-height: 100%;
-            transform: translate(-50%, -50%);
-
-            video::-webkit-media-controls,
-            video::-webkit-media-controls-timeline,
-            video::-webkit-media-controls-play-button,
-            video::-webkit-media-controls-mute-button,
-            video::-webkit-media-controls-volume-slider,
-            video::-webkit-media-controls-current-time-display {
-                display: none;
-            }
-        }
-    }
-
-    @include media-breakpoint-up(sm) {
-        .section-inside {
-            min-height: rem(300px);
-        }
-    }
-
-    @include media-breakpoint-up(md) {
-        .section-inside {
-		    min-height: rem(350px);
-        }
-    }
-
-    @include media-breakpoint-up(lg) {
-        .section-inside {
-            min-height: rem(400px);
-        }
-    }
-
-    @include media-breakpoint-up(xl) {
-        .section-inside {
-            min-height: rem(450px);
-        }
-    }
 }

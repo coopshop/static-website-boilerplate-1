@@ -9,8 +9,45 @@
     li a {
         display: inline-block;
     }
-	
+
 	li a:hover {
 		opacity: 0.7;
 	}
+}
+
+/*
+** Menu: Header
+*/
+#HeaderMenu {
+    margin-right: rem(-12px);
+
+    li a {
+        position: relative;
+        font-weight: 400;
+        padding: rem(6px 12px);
+        color: theme-color('light');
+        font-size: rem(16px);
+        z-index: 0;
+
+        &:before {
+            background: theme-color('light');
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            z-index: -1;
+            transition: 0.15s ease-in-out;
+        }
+    }
+
+    li a.active {
+        color: theme-color('dark');
+
+        &:before {
+            width: 100%;
+            opacity: 1;
+        }
+    }
 }

@@ -12,7 +12,7 @@
 @import "vendor/bootstrap";
 @import "vendor/hamburgers";
 @import "vendor/slick-carousel";
-@import "vendor/leaflet";
+// @import "vendor/leaflet";
 
 // Layout
 @import "layout/helpers";
@@ -21,9 +21,11 @@
 @import "layout/base";
 @import "layout/menus";
 @import "layout/header";
+@import "layout/mobile-overlay";
 @import "layout/sections";
 @import "layout/sliders";
 @import "layout/footer";
 
 // Sections
 @import "sections/hero";
+@import "sections/slider";

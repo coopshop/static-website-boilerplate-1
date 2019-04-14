@@ -31,7 +31,7 @@
 		<input type="checkbox" id="MobileOverlayTrigger" class="mobile-overlay-trigger">
 
         <header id="PageHeader">
-			<nav class="container">
+			<nav class="container-fluid">
 
 				<a id="Logo" href="./" title="ACME">
 					<img src="./assets/images/logo.svg" alt="ACME">
@@ -62,32 +62,24 @@
 
         <main id="PageWrapper">
 
-            <section class="section-item section-hero section-bg-image" style="background-image:url('./assets/images/hero-image.jpg')">
+            <section class="section-item section-hero section-bg-image section-full-height">
 
                 <span id="start" class="section-anchor"></span>
 
                 <div class="section-inside">
-                    <div class="section-body">
-                        <div class="container">
 
-                            <h1 class="section-headline display-1">ACME</h1>
-                            <h2 class="section-subline">A Company that makes everything</h2>
-
-                        </div>
+                    <div class="section-bg" style="background-image:url('./assets/videos/video-bg-web.jpg')">
+                        <video src="./assets/videos/video-bg-web.mp4" autoplay loop muted playsinline></video>
                     </div>
-                </div>
 
-                <div class="section-video-bg">
-                    <video autoplay loop muted playsinline>
-                        <source src="./assets/videos/video-bg-web.mp4" type="video/mp4">
-                        <source src="./assets/videos/video-bg-web.webm" type="video/webm">
-                    </video>
                 </div>
 
             </section>
 
-            <section class="section-item section-layout-light">
+            <section class="section-item">
+
                 <span id="projects" class="section-anchor"></span>
+
                 <div class="section-inside">
                     <div class="section-body" data-aos="fade-up">
 
@@ -99,6 +91,65 @@
                         </div>
 
                     </div>
+                </div>
+
+            </section>
+
+            <section class="section-item section-slider section-layout-dark">
+                <span id="impressions" class="section-anchor"></span>
+                <div class="slider">
+
+                    <div class="section-inside">
+                        <div class="section-body">
+
+                            <div class="container">
+                                <div class="row justify-content-center text-center">
+                                    <div class="col-md-16">
+                                        <h1 class="section-headline">Idyllic view of nature</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="section-bg section-bg-overlay-opacity-30 bg-position-50-30" style="background-image:url('./assets/images/slide-image-1.jpg')"></div>
+                    </div>
+
+                    <div class="section-inside">
+                        <div class="section-body">
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-16">
+                                        <h1 class="section-headline">Experience Berlin from above</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="section-bg section-bg-overlay-opacity-20 bg-position-100-40" style="background-image:url('./assets/images/slide-image-2.jpg')"></div>
+                    </div>
+
+                    <div class="section-inside">
+                        <div class="section-body">
+
+                            <div class="container">
+                                <div class="row justify-content-end text-right">
+                                    <div class="col-md-16">
+                                        <h1 class="section-headline">The craziest circus in Germany</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="section-bg section-bg-overlay-opacity-70 bg-position-50-50" style="background-image:url('./assets/images/slide-image-3.jpg')"></div>
+                    </div>
+
                 </div>
             </section>
 
@@ -115,58 +166,6 @@
                         </div>
 
                     </div>
-                </div>
-            </section>
-
-            <section class="section-item section-hero section-hero-slider">
-                <span id="impressions" class="section-anchor"></span>
-                <div class="hero-slider">
-
-                    <div class="section-inside bg-position-top-center" style="background-image:url('./assets/images/slide-image-1.jpg')">
-                        <div class="section-body">
-
-                            <div class="container">
-                                <div class="row justify-content-center text-center">
-                                    <div class="col-md-16">
-                                        <h1 class="section-headline">Idyllic view of nature</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="section-inside bg-position-center-right" style="background-image:url('./assets/images/slide-image-2.jpg')">
-                        <div class="section-body">
-
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-16">
-                                        <h1 class="section-headline">Experience Berlin from above</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="section-inside bg-position-top-center" style="background-image:url('./assets/images/slide-image-3.jpg')">
-                        <div class="section-body">
-
-                            <div class="container">
-                                <div class="row justify-content-end text-right">
-                                    <div class="col-md-16">
-                                        <h1 class="section-headline">The craziest circus in Germany</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
             </section>
 

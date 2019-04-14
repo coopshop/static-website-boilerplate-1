@@ -1,0 +1,42 @@
+@mixin mobile-overlay() {
+
+    // Closed
+    #MobileOverlay {
+        background-color: #fff;
+        position: fixed;
+        top: $header-height-sm;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 150;
+        overflow: auto;
+        transition: 0.15s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #MobileOverlayInside {
+        transition: 0.15s ease-in-out;
+        transform: translateY(15px);
+        padding: rem(30px);
+    }
+
+    // Opened
+    #MobileOverlayTrigger:checked ~ #PageHeader {
+        .hamburger {
+            @extend .is-active;
+        }
+
+        #MobileOverlay {
+            bottom: 0;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        #MobileOverlayInside {
+            transform: translateY(0);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
